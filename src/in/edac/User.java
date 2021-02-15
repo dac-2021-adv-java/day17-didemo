@@ -6,6 +6,9 @@ public class User {
 	private String email;
 	private String password;
 	
+	// User Defined DataType
+	private Address address;
+	
 	
 	public User() {
 		super();
@@ -17,6 +20,16 @@ public class User {
 		this.name = name;
 		this.email = email;
 		this.password = password;
+	}
+	
+
+	public User(int id, String name, String email, String password, Address address) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.email = email;
+		this.password = password;
+		this.address = address;
 	}
 
 	public int getId() {
@@ -51,4 +64,14 @@ public class User {
 		this.password = password;
 	}
 
+	public Address getAddress() {
+		return address;
+	}
+
+	public void setAddress(Address address) {
+		this.address = address;
+	}
+
+	
+	
 }
