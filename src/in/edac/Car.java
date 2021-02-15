@@ -5,6 +5,7 @@ public class Car {
 	private String modelNumber;
 	private String color;
 	
+	// @AutoWired
 	private Engine engine;
 	/*private Suspension suspension;
 	private Cooling cooling;
